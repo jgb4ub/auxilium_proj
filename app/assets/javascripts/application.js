@@ -15,3 +15,5 @@
 //= require turbolinks
 //= require foundation
 //= require_tree .
+
+jQuery.extend($.gritter.options,{time:1000,});

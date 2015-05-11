@@ -1,0 +1,25 @@
+<div class="bodywrapper">
+<br>
+
+<p>
+  <% unless @user.avatar.nil? %>
+    <%= image_tag @user.avatar_url.to_s, size: "80x80", :class => "gravatar2" %>
+  <% else %>
+    <%= image_tag "/assets/default.png", size: "80x80", :class => "gravatar2" %>
+  <% end %>
+  <br>
+  <strong>Name:</strong>
+  <%= @user.username %><br>
+
+
+
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user), class: "button tiny radius" %>
+<%= link_to 'Logout', logout_path, method: :delete, :class => "button tiny radius" %>
+<% if current_user_admin? %>
+  <%= link_to 'All Users', users_path, class: "button tiny radius" %>
+<% end %>
+</div>
