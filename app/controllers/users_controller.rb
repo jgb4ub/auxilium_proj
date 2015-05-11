@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  mount_uploader :avatar, AvatarUploader
   before_action :require_signin, except: [:new, :create]
   before_action :require_correct_user, only: [:edit, :update]
   before_action :require_admin, only: [:destroy, :index, :new, :create]

@@ -34,6 +34,8 @@ gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
 gem 'responders'
 gem 'gritter'
+gem 'carrierwave'
+gem 'rmagick'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
