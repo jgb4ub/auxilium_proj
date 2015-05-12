@@ -1,12 +1,15 @@
-<div class="bodywrapper">
-<header id="content-header">
-  <h3 id='storyheader'>Sign In</h3>
-</header>
+
+
+
+<div class="row">
+<div class='signinbox small-9 medium-9 large-9'>
+
+<h3 id='storyheader' class='headercolor'>Sign In</h3>
 
 <%= form_tag(session_path) do %>
 
 <div class="row">
-  <div class="large-6 columns">
+  <div class="small-12 medium-12 large-12 columns">
     <div class="row collapse prefix-radius">
       <div class="small-3 medium-2 columns">
         <span class="prefix">Email</span>
@@ -19,7 +22,7 @@
 </div>
 
 <div class="row">
-  <div class="large-6 columns">
+  <div class="small-12 medium-12 large-12 columns">
     <div class="row collapse prefix-radius">
       <div class="small-3 medium-2 columns">
         <span class="prefix">Password</span>
@@ -37,4 +40,5 @@
   </div>
 </div>
 <% end %>
+</div>
 </div>
