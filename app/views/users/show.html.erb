@@ -1,5 +1,7 @@
-<div class="bodywrapper">
-<br>
+
+
+<div class="row">
+<div class='signinbox small-9 medium-9 large-9'>
 
 <p>
   <% unless @user.avatar.nil? %>
@@ -22,4 +24,6 @@
 <% if current_user_admin? %>
   <%= link_to 'All Users', users_path, class: "button tiny radius" %>
 <% end %>
+
+</div>
 </div>
