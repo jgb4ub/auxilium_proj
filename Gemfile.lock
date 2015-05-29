@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/turbolinks.git
-  revision: d2e5b4863a2425155d050b965778d8550d8958e1
+  revision: f1286dde9709541902d3c099ef39df6d5fd44e61
   specs:
     turbolinks (3.0.0)
       coffee-rails
@@ -51,13 +51,15 @@ GEM
     bullet (4.14.7)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.9.0)
-    byebug (4.0.5)
+    byebug (5.0.0)
       columnize (= 0.9.0)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    choice (0.2.0)
+    coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -84,7 +86,7 @@ GEM
       activesupport (>= 4.1.0)
     gritter (1.1.0)
     i18n (0.7.0)
-    jbuilder (2.2.13)
+    jbuilder (2.2.16)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
@@ -96,14 +98,21 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.5)
+    method_source (0.8.2)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.6.1)
+    minitest (5.7.0)
     multi_json (1.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.2)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.1)
+    rack-mini-profiler (0.9.3)
+      rack (>= 1.1.3)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -123,6 +132,11 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
+    rails-erd (1.4.0)
+      activerecord (>= 3.2)
+      activesupport (>= 3.2)
+      choice (~> 0.2.0)
+      ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
     railties (4.2.1)
@@ -135,7 +149,8 @@ GEM
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rmagick (2.15.0)
-    sass (3.4.13)
+    ruby-graphviz (1.2.2)
+    sass (3.4.14)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -145,6 +160,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    slop (3.6.0)
     spring (1.3.6)
     sprockets (3.1.0)
       rack (~> 1.0)
@@ -186,8 +202,12 @@ DEPENDENCIES
   gritter
   jbuilder
   jquery-rails
+  minitest
   pg
+  pry
+  rack-mini-profiler
   rails
+  rails-erd
   responders
   rmagick
   sass-rails
